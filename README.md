@@ -8,5 +8,6 @@ replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 * use `Form`
 * use `DIALOG` with `Form`
 * use `CALL FORM` instead of `CALL PROCESS`
+* use `CALL FORM` instead of `SET TIMER`
 * use `CONVERT COORDINATES`
 * use `OBJECT Get subform container value` instead of `OBJECT Get pointer(Object subform container)`
