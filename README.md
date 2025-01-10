@@ -11,3 +11,4 @@ replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 * use `CALL FORM` instead of `SET TIMER`
 * use `CONVERT COORDINATES`
 * use `OBJECT Get subform container value` instead of `OBJECT Get pointer(Object subform container)`
+* use object data source for popup instead of `New list`
