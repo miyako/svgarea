@@ -13,9 +13,9 @@ replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 * use `OBJECT Get subform container value` instead of `OBJECT Get pointer(Object subform container)`
 * use object data source for popup instead of `New list`
 
-## removes features
+## removed features
 
 * pattern tool (was not working anyway)
-* original image size propertional (was not working anyway)
+* original image size proportional (was not working anyway)
 * embed image (always enabled)
 * align tool in palette (hidden buttons; feature available in main editor)
