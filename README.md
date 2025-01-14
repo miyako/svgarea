@@ -16,3 +16,4 @@ replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 ## removes features
 
 * pattern tool (was not working anyway)
+* embed image (always enabled)
