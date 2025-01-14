@@ -1,0 +1,18 @@
+{
+  "name": "svgarea",
+  "description": "svgarea",
+  "author": [
+    "Vincent de Lachaux <vincent.delachaux@4d.com>",
+    "Keisuke Miyako <keisuke.miyako@4D.com>"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/miyako/svgarea",
+  "version": "1.0.0",
+  "tool": {
+    "platform": "macos",
+    "branch": "20.x",
+    "version": "20.5",
+    "build": "latest",
+    "arch": "arm"
+  }
+}
