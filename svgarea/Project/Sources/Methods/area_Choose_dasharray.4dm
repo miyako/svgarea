@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
 #DECLARE($dashArray : Text; $dashArrays : Collection) : Object
 
 var $item : Object

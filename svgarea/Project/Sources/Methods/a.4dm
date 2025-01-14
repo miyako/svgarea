@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true}
+//%attributes = {}
 SVG_OPEN_subForm
 
 /*
