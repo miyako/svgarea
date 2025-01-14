@@ -6,6 +6,19 @@
 # svgarea
 replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 
+## dependencies.json
+
+ ```json
+{
+    "dependencies": {
+        "svgarea": {
+            "github": "miyako/svgarea",
+            "version": "*"
+        }
+    }
+}
+```
+
 ## technical updates 
 
 * use standard Xpath notation for XML
