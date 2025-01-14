@@ -1,14 +1,29 @@
 {
 	"shared with host": {
 		"methods": [
+			"SVG AREA Close",
+			"SVG AREA Get Callback Method",
 			"SVG AREA Get DOM",
 			"SVG AREA Get Picture",
+			"SVG AREA New",
 			"SVG AREA Open",
 			"SVG AREA REDRAW",
 			"SVG AREA Save",
 			"SVG AREA Select all",
+			"SVG AREA SET CALLBACK METHOD",
 			"SVG AREA SET DOM",
 			"SVG AREA SET PICTURE"
+		]
+	},
+	"v12": {
+		"methods": [
+			"area_CALLBACK",
+			"area_Get_version",
+			"area_INIT",
+			"Compiler_area",
+			"Compiler_Methods",
+			"Compiler_Variables_Inter",
+			"WRAP_DOM_CLOSE_XML"
 		]
 	},
 	"v20": {
@@ -69,6 +84,8 @@
 			"xSVG AREA Paste"
 		],
 		"forms": [
+			"area",
+			"svgArea_propertyList",
 			"textEdit"
 		],
 		"classes": [
