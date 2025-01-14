@@ -1,0 +1,2755 @@
+{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:propertyListWindowTitle",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 300,
+	"height": 480,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Ligne6": {
+					"type": "line",
+					"top": 0,
+					"left": 210,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne11": {
+					"type": "line",
+					"top": 0,
+					"left": 205,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne4": {
+					"type": "line",
+					"top": 0,
+					"left": 130,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 0,
+					"left": 135,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 0,
+					"left": 85,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 0,
+					"left": 90,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"objects": {
+					"type": "dropdown",
+					"top": 10,
+					"left": 10,
+					"width": 280,
+					"height": 21,
+					"dataSource": "Form:C1466.objects",
+					"class": "palette",
+					"method": "ObjectMethods/objects.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				},
+				"input.id": {
+					"type": "input",
+					"top": 40,
+					"left": 92,
+					"width": 197,
+					"height": 17,
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.id.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.id"
+				},
+				"id#0": {
+					"type": "text",
+					"top": 40,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:id"
+				},
+				"Ligne": {
+					"type": "line",
+					"top": 65,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne13": {
+					"type": "line",
+					"top": 0,
+					"left": 10,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"Ligne14": {
+					"type": "line",
+					"top": 0,
+					"left": 290,
+					"height": 400,
+					"visibility": "hidden",
+					"stroke": "#0099FF"
+				},
+				"window": {
+					"type": "input",
+					"top": 482,
+					"left": 26,
+					"width": 116,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.window",
+					"stroke": "#ff0000",
+					"class": "palette",
+					"textAlign": "left",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [],
+					"dataSourceTypeHint": "integer",
+					"visibility": "hidden"
+				},
+				"update": {
+					"type": "input",
+					"top": 482,
+					"left": 148,
+					"width": 42,
+					"height": 17,
+					"sizingY": "move",
+					"dataSource": "Form:C1466.updateCount",
+					"class": "palette",
+					"textAlign": "right",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [],
+					"dataSourceTypeHint": "integer",
+					"visibility": "hidden"
+				}
+			},
+			"entryOrder": []
+		},
+		{
+			"objects": {
+				"x#1": {
+					"type": "text",
+					"top": 75,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:x"
+				},
+				"y#1": {
+					"type": "text",
+					"top": 75,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:y"
+				},
+				"width#1": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:width"
+				},
+				"height#1": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:height"
+				},
+				"input.rect.x": {
+					"type": "input",
+					"top": 75,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.x",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.x.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.y": {
+					"type": "input",
+					"top": 75,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.y",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.y.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.width": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.width",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.width.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.height": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.height",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.height.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.rx": {
+					"type": "input",
+					"top": 125,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.rx",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.rx.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.ry": {
+					"type": "input",
+					"top": 125,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.ry",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.rect.ry.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.button.fill": {
+					"type": "stepper",
+					"top": 200,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.button.fill.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.rect.fillOpacity": {
+					"type": "ruler",
+					"top": 203,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.fillOpacity",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.rect.fillOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rx#1": {
+					"type": "text",
+					"top": 125,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:rx"
+				},
+				"ry#1": {
+					"type": "text",
+					"top": 125,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:ry"
+				},
+				"fillOpacity#1": {
+					"type": "text",
+					"top": 195,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fillOpacity"
+				},
+				"rect.rect.stroke": {
+					"type": "rectangle",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.rect.stroke": {
+					"type": "button",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.rect.stroke.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"strokeWidth#1": {
+					"type": "text",
+					"top": 350,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeWidth"
+				},
+				"strokeOpacity#1": {
+					"type": "text",
+					"top": 315,
+					"left": -15,
+					"width": 100,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeOpacity"
+				},
+				"input.rect.fillOpacity": {
+					"type": "input",
+					"top": 205,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rect.rect.fill": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.rect.fill": {
+					"type": "button",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.rect.fill.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne7": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"b.rect.pattern": {
+					"type": "picturePopup",
+					"top": 180,
+					"left": 322,
+					"width": 28,
+					"height": 14,
+					"dataSource": "",
+					"columnCount": 5,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/patterns.4pct",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"fill#1": {
+					"type": "text",
+					"top": 160,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fill"
+				},
+				"dasharray#1": {
+					"type": "text",
+					"top": 285,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:dasharray"
+				},
+				"stroke#1": {
+					"type": "text",
+					"top": 260,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:stroke"
+				},
+				"input.rect.fill": {
+					"type": "input",
+					"top": 160,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.fill",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.stroke": {
+					"type": "input",
+					"top": 260,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.stroke",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.rect.dashArray": {
+					"type": "input",
+					"top": 285,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.dashArray",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 503,
+					"left": 0,
+					"width": 300,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "RECTANGLES"
+				},
+				"Ligne15": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"stepper.rect.strokeOpacity": {
+					"type": "stepper",
+					"top": 320,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.rect.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.rect.strokeOpacity": {
+					"type": "ruler",
+					"top": 323,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.rect.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"stepper.rect.strokeWidth": {
+					"type": "stepper",
+					"top": 355,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.rect.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.rect.strokeWidth": {
+					"type": "input",
+					"top": 359,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;,\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rule.rect.strokeWidth": {
+					"type": "ruler",
+					"top": 357,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.rect.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.rect.strokeOpacity": {
+					"type": "input",
+					"top": 324,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"image.rect.dashArray": {
+					"type": "input",
+					"left": 261,
+					"top": 285,
+					"width": 30,
+					"height": 17,
+					"dataSourceTypeHint": "picture",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "",
+					"method": "ObjectMethods/image.rect.dashArray.4dm",
+					"events": [
+						"onClick"
+					],
+					"dragging": "none",
+					"dropping": "none"
+				}
+			},
+			"entryOrder": [
+				"input.rect.x",
+				"input.rect.y",
+				"input.rect.width",
+				"input.rect.height",
+				"input.rect.rx",
+				"input.rect.ry",
+				"input.rect.fill",
+				"b.rect.fill",
+				"stepper.button.fill",
+				"input.rect.fillOpacity",
+				"rule.rect.fillOpacity",
+				"input.rect.stroke",
+				"b.rect.stroke",
+				"input.rect.dashArray",
+				"input.rect.strokeOpacity",
+				"stepper.rect.strokeOpacity",
+				"rule.rect.strokeOpacity",
+				"input.rect.strokeWidth",
+				"stepper.rect.strokeWidth",
+				"rule.rect.strokeWidth",
+				"image.rect.dashArray"
+			]
+		},
+		{
+			"objects": {
+				"stroke.17": {
+					"type": "text",
+					"top": 152,
+					"left": 25,
+					"width": 60,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeLinecap"
+				},
+				"stroke.linecap": {
+					"type": "dropdown",
+					"top": 160,
+					"left": 90,
+					"width": 191,
+					"height": 21,
+					"dataSource": "Form:C1466.linecap",
+					"dataSourceTypeHint": "object",
+					"class": "palette",
+					"method": "ObjectMethods/stroke.linecap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 503,
+					"left": 78,
+					"width": 222,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "LINES"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 75,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:x1"
+				},
+				"Texte11": {
+					"type": "text",
+					"top": 75,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:y1"
+				},
+				"Texte12": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:x2"
+				},
+				"Texte13": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:y2"
+				},
+				"input.line.x1": {
+					"type": "input",
+					"top": 75,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.x1",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.line.x1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.line.y1": {
+					"type": "input",
+					"top": 75,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.y1",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.line.y1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.line.x2": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.x2",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.line.x2.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.line.y2": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.y2",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.line.y2.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.line.strokeOpacity": {
+					"type": "stepper",
+					"top": 320,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.line.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.line.strokeOpacity": {
+					"type": "ruler",
+					"top": 323,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.line.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"stroke.1": {
+					"type": "text",
+					"top": 350,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeWidth"
+				},
+				"stroke.4": {
+					"type": "text",
+					"top": 315,
+					"left": -15,
+					"width": 100,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeOpacity"
+				},
+				"rect.line.stroke": {
+					"type": "rectangle",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.line.stroke": {
+					"type": "button",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.line.stroke.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"stroke.7": {
+					"type": "text",
+					"top": 285,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:dasharray"
+				},
+				"Texte41": {
+					"type": "text",
+					"top": 260,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:stroke"
+				},
+				"003.box2": {
+					"type": "input",
+					"top": 260,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.stroke",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"003.box3": {
+					"type": "input",
+					"top": 285,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.dashArray",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Ligne19": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne12": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"input.line.strokeOpacity": {
+					"type": "input",
+					"top": 324,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.line.strokeWidth": {
+					"type": "stepper",
+					"top": 355,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.line.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.line.strokeWidth": {
+					"type": "input",
+					"top": 359,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;,\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rule.line.strokeWidth": {
+					"type": "ruler",
+					"top": 357,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.line.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"image.line.dashArray": {
+					"type": "input",
+					"left": 261,
+					"top": 285,
+					"width": 30,
+					"height": 17,
+					"dataSourceTypeHint": "picture",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "",
+					"method": "ObjectMethods/image.line.dashArray.4dm",
+					"events": [
+						"onClick"
+					],
+					"dragging": "none",
+					"dropping": "none"
+				}
+			},
+			"entryOrder": [
+				"input.line.x1",
+				"input.line.y1",
+				"input.line.x2",
+				"input.line.y2",
+				"stroke.linecap",
+				"003.box2",
+				"b.line.stroke",
+				"003.box3",
+				"input.line.strokeOpacity",
+				"stepper.line.strokeOpacity",
+				"rule.line.strokeOpacity",
+				"input.line.strokeWidth",
+				"stepper.line.strokeWidth",
+				"rule.line.strokeWidth",
+				"image.line.dashArray"
+			]
+		},
+		{
+			"objects": {
+				"Text3": {
+					"type": "text",
+					"top": 503,
+					"left": 78,
+					"width": 222,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "CIRCLES"
+				},
+				"Texte16": {
+					"type": "text",
+					"top": 75,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:cx"
+				},
+				"Texte17": {
+					"type": "text",
+					"top": 75,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:cy"
+				},
+				"Texte20": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:rx"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:ry"
+				},
+				"input.ellipse.cx": {
+					"type": "input",
+					"top": 75,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.cx",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.ellipse.cx.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.ellipse.cy": {
+					"type": "input",
+					"top": 75,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.cy",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.ellipse.cy.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.ellipse.rx": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.rx",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.ellipse.rx.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.ellipse.ry": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.ry",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.ellipse.ry.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Ligne9": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"stroke.3": {
+					"type": "text",
+					"top": 350,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeWidth"
+				},
+				"stroke.6": {
+					"type": "text",
+					"top": 315,
+					"left": -15,
+					"width": 100,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:strokeOpacity"
+				},
+				"rect.ellipse.stroke": {
+					"type": "rectangle",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.ellipse.stroke": {
+					"type": "button",
+					"top": 260,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.ellipse.stroke.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"stroke.8": {
+					"type": "text",
+					"top": 285,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:dasharray"
+				},
+				"Texte42": {
+					"type": "text",
+					"top": 260,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:stroke"
+				},
+				"003.box6": {
+					"type": "input",
+					"top": 260,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.stroke",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"003.box8": {
+					"type": "input",
+					"top": 285,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.dashArray",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Ligne5": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"stepper.button.fill2": {
+					"type": "stepper",
+					"top": 200,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.button.fill2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"002.rule.opacity.fill2": {
+					"type": "ruler",
+					"top": 203,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.fillOpacity",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/002.rule.opacity.fill2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte37": {
+					"type": "text",
+					"top": 195,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fillOpacity"
+				},
+				"002.show.opacity.fill2": {
+					"type": "input",
+					"top": 205,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rect.ellipse.fill": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.ellipse.fill": {
+					"type": "button",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.ellipse.fill.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"b.ellipse.pattern": {
+					"type": "picturePopup",
+					"top": 180,
+					"left": 322,
+					"width": 28,
+					"height": 14,
+					"dataSource": "",
+					"columnCount": 5,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/patterns.4pct",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"Texte39": {
+					"type": "text",
+					"top": 160,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fill"
+				},
+				"003.box5": {
+					"type": "input",
+					"top": 160,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.fill",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.ellipse.strokeOpacity": {
+					"type": "stepper",
+					"top": 320,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.ellipse.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.ellipse.strokeOpacity": {
+					"type": "ruler",
+					"top": 323,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.ellipse.strokeOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.ellipse.strokeOpacity": {
+					"type": "input",
+					"top": 324,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.ellipse.strokeWidth": {
+					"type": "stepper",
+					"top": 355,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.ellipse.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.ellipse.strokeWidth": {
+					"type": "input",
+					"top": 359,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.;,\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rule.ellipse.strokeWidth": {
+					"type": "ruler",
+					"top": 357,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.strokeWidth",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.ellipse.strokeWidth.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"image.ellipse.dashArray": {
+					"type": "input",
+					"left": 261,
+					"top": 285,
+					"width": 30,
+					"height": 17,
+					"dataSourceTypeHint": "picture",
+					"enterable": true,
+					"focusable": false,
+					"contextMenu": "none",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "",
+					"method": "ObjectMethods/image.ellipse.dashArray.4dm",
+					"events": [
+						"onClick"
+					],
+					"dragging": "none",
+					"dropping": "none"
+				}
+			},
+			"entryOrder": [
+				"input.ellipse.cx",
+				"input.ellipse.cy",
+				"input.ellipse.rx",
+				"input.ellipse.ry",
+				"003.box5",
+				"b.ellipse.fill",
+				"stepper.button.fill2",
+				"002.show.opacity.fill2",
+				"002.rule.opacity.fill2",
+				"003.box6",
+				"b.ellipse.stroke",
+				"003.box8",
+				"input.ellipse.strokeOpacity",
+				"stepper.ellipse.strokeOpacity",
+				"rule.ellipse.strokeOpacity",
+				"input.ellipse.strokeWidth",
+				"stepper.ellipse.strokeWidth",
+				"rule.ellipse.strokeWidth",
+				"image.ellipse.dashArray"
+			]
+		},
+		{
+			"objects": {
+				"Texte5": {
+					"type": "text",
+					"top": 322,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fontWeight"
+				},
+				"stepper.textArea.fontSize": {
+					"type": "stepper",
+					"top": 297,
+					"left": 135,
+					"width": 19,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.fontSize",
+					"min": 1,
+					"max": 100,
+					"method": "ObjectMethods/stepper.textArea.fontSize.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"input.textArea.fontSize": {
+					"type": "input",
+					"top": 300,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.fontSize",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.textArea.fontSize.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Texte26": {
+					"type": "text",
+					"top": 255,
+					"left": 5,
+					"width": 80,
+					"height": 31,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fontFamilly"
+				},
+				"stroke.16": {
+					"type": "text",
+					"top": 300,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fontSize"
+				},
+				"textArea.fontWeight": {
+					"type": "dropdown",
+					"top": 330,
+					"left": 92,
+					"width": 197,
+					"height": 20,
+					"dataSource": "Form:C1466.fontWeight",
+					"class": "palette",
+					"method": "ObjectMethods/textArea.fontWeight.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 362,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fontStyle"
+				},
+				"textArea.fontStyle": {
+					"type": "dropdown",
+					"top": 360,
+					"left": 92,
+					"width": 198,
+					"height": 21,
+					"dataSource": "Form:C1466.fontStyle",
+					"class": "palette",
+					"method": "ObjectMethods/textArea.fontStyle.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				},
+				"Texte18": {
+					"type": "text",
+					"top": 415,
+					"left": 5,
+					"width": 80,
+					"height": 31,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:textDecoration"
+				},
+				"textArea.textDecoration": {
+					"type": "dropdown",
+					"top": 420,
+					"left": 94,
+					"width": 195,
+					"height": 21,
+					"dataSource": "Form:C1466.textDecoration",
+					"class": "palette",
+					"method": "ObjectMethods/textArea.textDecoration.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				},
+				"Texte34": {
+					"type": "text",
+					"top": 392,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:textAlign"
+				},
+				"textArea.textAlign": {
+					"type": "dropdown",
+					"top": 390,
+					"left": 92,
+					"width": 197,
+					"height": 20,
+					"dataSource": "Form:C1466.textAlign",
+					"class": "palette",
+					"method": "ObjectMethods/textArea.textAlign.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				},
+				"textArea.fontFamily": {
+					"type": "dropdown",
+					"top": 260,
+					"left": 92,
+					"width": 197,
+					"height": 20,
+					"dataSource": "Form:C1466.fontFamily",
+					"method": "ObjectMethods/textArea.fontFamily.4dm",
+					"events": [
+						"onClick"
+					],
+					"right": 289,
+					"dataSourceTypeHint": "object"
+				},
+				"Text": {
+					"type": "text",
+					"top": 503,
+					"left": 78,
+					"width": 222,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "TEXTS"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 75,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:x"
+				},
+				"Texte19": {
+					"type": "text",
+					"top": 75,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:y"
+				},
+				"Texte23": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:width"
+				},
+				"Texte24": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:height"
+				},
+				"input.textArea.x": {
+					"type": "input",
+					"top": 75,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.x",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.textArea.x.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.textArea.y": {
+					"type": "input",
+					"top": 75,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.y",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.textArea.y.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.textArea.width": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.width",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.textArea.width.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.textArea.height": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.height",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.textArea.height.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.textArea.opacity": {
+					"type": "stepper",
+					"top": 200,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.textArea.opacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.textArea.opacity": {
+					"type": "ruler",
+					"top": 203,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.fillOpacity",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.textArea.opacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte25": {
+					"type": "text",
+					"top": 195,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fillOpacity"
+				},
+				"input.textArea.opacity": {
+					"type": "input",
+					"top": 205,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.fillOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rect.textArea.fill": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.textArea.fill": {
+					"type": "button",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.textArea.fill.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"b.textArea.pattern": {
+					"type": "picturePopup",
+					"top": 180,
+					"left": 322,
+					"width": 28,
+					"height": 14,
+					"dataSource": "",
+					"columnCount": 5,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/patterns.4pct",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"Texte28": {
+					"type": "text",
+					"top": 160,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fill"
+				},
+				"input.textArea.fill": {
+					"type": "input",
+					"top": 160,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.fill",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Ligne10": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne16": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 445,
+					"left": 5,
+					"width": 80,
+					"height": 31,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:displayAlign"
+				},
+				"textArea.displayAlign": {
+					"type": "dropdown",
+					"top": 450,
+					"left": 94,
+					"width": 195,
+					"height": 21,
+					"dataSource": "Form:C1466.displayAlign",
+					"class": "palette",
+					"method": "ObjectMethods/textArea.displayAlign.4dm",
+					"events": [
+						"onClick"
+					],
+					"dataSourceTypeHint": "object"
+				}
+			},
+			"entryOrder": [
+				"input.textArea.x",
+				"input.textArea.y",
+				"input.textArea.width",
+				"input.textArea.height",
+				"input.textArea.fill",
+				"b.textArea.fill",
+				"stepper.textArea.opacity",
+				"input.textArea.opacity",
+				"rule.textArea.opacity",
+				"textArea.fontFamily",
+				"input.textArea.fontSize",
+				"stepper.textArea.fontSize",
+				"textArea.fontWeight",
+				"textArea.fontStyle",
+				"textArea.textAlign",
+				"textArea.textDecoration",
+				"textArea.displayAlign"
+			]
+		},
+		{
+			"objects": {
+				"preserveAspectRatio.label": {
+					"type": "text",
+					"top": 260,
+					"left": -10,
+					"width": 160,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:preserveAspectRatio"
+				},
+				"image.preserveAspectRatio": {
+					"type": "dropdown",
+					"top": 258,
+					"left": 150,
+					"width": 139,
+					"height": 21,
+					"dataSource": "Form:C1466.preserveAspectRatio",
+					"dataSourceTypeHint": "object",
+					"class": "palette",
+					"method": "ObjectMethods/image.preserveAspectRatio.4dm",
+					"events": [
+						"onClick"
+					],
+					"right": 289
+				},
+				"cb.image.meet": {
+					"type": "radio",
+					"top": 311,
+					"left": 95,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.meet",
+					"text": ":xliff:meet",
+					"class": "palette",
+					"focusable": false,
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/cb.image.meet.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb.image.slice": {
+					"type": "radio",
+					"top": 334,
+					"left": 95,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.slice",
+					"text": ":xliff:slice",
+					"class": "palette",
+					"focusable": false,
+					"radioGroup": "Group27",
+					"method": "ObjectMethods/cb.image.slice.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"006.button.1": {
+					"type": "button",
+					"top": 170,
+					"left": 90,
+					"width": 115,
+					"height": 23,
+					"class": "palette",
+					"focusable": false,
+					"text": ":xliff:originalSize",
+					"iconFrames": 4,
+					"style": "regular",
+					"method": "ObjectMethods/006.button.1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb.image.proportional": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 328,
+					"width": 98,
+					"height": 22,
+					"dataSource": "Form:C1466.proportional",
+					"text": ":xliff:proportional",
+					"class": "palette",
+					"focusable": false,
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 503,
+					"left": 78,
+					"width": 222,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "PICTURES"
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 75,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:x"
+				},
+				"Texte27": {
+					"type": "text",
+					"top": 75,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:y"
+				},
+				"Texte29": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:width"
+				},
+				"Texte30": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:height"
+				},
+				"input.image.x": {
+					"type": "input",
+					"top": 75,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.x",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.image.x.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.image.y": {
+					"type": "input",
+					"top": 75,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.y",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.image.y.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.image.width": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.width",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.image.width.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"input.image.height": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.height",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.image.height.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Ligne20": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne21": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				}
+			},
+			"entryOrder": [
+				"input.image.x",
+				"input.image.y",
+				"input.image.width",
+				"input.image.height",
+				"006.button.1",
+				"cb.image.proportional",
+				"image.preserveAspectRatio",
+				"cb.image.meet",
+				"cb.image.slice"
+			]
+		},
+		{
+			"objects": {
+				"Texte6": {
+					"type": "text",
+					"top": 75,
+					"left": 20,
+					"width": 65,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:size"
+				},
+				"Texte31": {
+					"type": "text",
+					"top": 280,
+					"left": 13,
+					"width": 72,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:GridSpacing"
+				},
+				"input.document.grid": {
+					"type": "input",
+					"top": 280,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.area.grid",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/input.document.grid.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"rule.document.grid": {
+					"type": "ruler",
+					"top": 278,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSourceTypeHint": "number",
+					"min": 10,
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.document.grid.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.area.grid"
+				},
+				"stepper.document.grid": {
+					"type": "stepper",
+					"top": 275,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSourceTypeHint": "number",
+					"min": 10,
+					"max": 100,
+					"method": "ObjectMethods/stepper.document.grid.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.area.grid"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 503,
+					"left": 78,
+					"width": 222,
+					"height": 28,
+					"textAlign": "right",
+					"fontFamily": "Helvetica",
+					"fontSize": 24,
+					"text": "DOCUMENT"
+				},
+				"Lon_documents": {
+					"type": "dropdown",
+					"top": 70,
+					"left": 90,
+					"width": 148,
+					"height": 21,
+					"dataSource": "Form:C1466.templates",
+					"dataSourceTypeHint": "object",
+					"method": "ObjectMethods/Lon_documents.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texte40": {
+					"type": "text",
+					"top": 160,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fill"
+				},
+				"input.document.viewportFill": {
+					"type": "input",
+					"top": 160,
+					"left": 92,
+					"width": 162,
+					"height": 17,
+					"dataSource": "Form:C1466.viewportFill",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"stepper.document.viewportFillOpacity": {
+					"type": "stepper",
+					"top": 200,
+					"left": 135,
+					"width": 16,
+					"height": 26,
+					"sizingX": "move",
+					"dataSource": "Form:C1466.viewportFillOpacity",
+					"dataSourceTypeHint": "number",
+					"max": 100,
+					"method": "ObjectMethods/stepper.document.viewportFillOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"rule.document.viewportFillOpacity": {
+					"type": "ruler",
+					"top": 203,
+					"left": 160,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Form:C1466.viewportFillOpacity",
+					"max": 100,
+					"graduationStep": 1,
+					"focusable": false,
+					"class": "palette",
+					"method": "ObjectMethods/rule.document.viewportFillOpacity.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte35": {
+					"type": "text",
+					"top": 195,
+					"left": 5,
+					"width": 80,
+					"height": 36,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:fillOpacity"
+				},
+				"input.document.viewportFillOpacity": {
+					"type": "input",
+					"top": 205,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.viewportFillOpacity",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"focusable": false,
+					"fill": "transparent",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rect.document.viewportFill": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"fill": "#FFFF00",
+					"stroke": "transparent"
+				},
+				"b.document.viewportFill": {
+					"type": "button",
+					"top": 160,
+					"left": 261,
+					"width": 30,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/b.document.viewportFill.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"b.document.pattern": {
+					"type": "picturePopup",
+					"top": 180,
+					"left": 322,
+					"width": 28,
+					"height": 14,
+					"dataSource": "",
+					"columnCount": 5,
+					"rowCount": 4,
+					"picture": "/RESOURCES/images/patterns.4pct",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					],
+					"visibility": "hidden"
+				},
+				"Ligne8": {
+					"type": "line",
+					"top": 250,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Ligne17": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				},
+				"Texte32": {
+					"type": "text",
+					"top": 100,
+					"left": 5,
+					"width": 80,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:width"
+				},
+				"Texte33": {
+					"type": "text",
+					"top": 100,
+					"left": 146,
+					"width": 59,
+					"height": 16,
+					"class": "palette",
+					"textAlign": "right",
+					"text": ":xliff:height"
+				},
+				"input.document.width": {
+					"type": "input",
+					"top": 100,
+					"left": 92,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.width",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.document.width.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"entryFilter": "&9"
+				},
+				"input.document.height": {
+					"type": "input",
+					"top": 100,
+					"left": 212,
+					"width": 37,
+					"height": 17,
+					"dataSource": "Form:C1466.height",
+					"dataSourceTypeHint": "number",
+					"class": "palette",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/input.document.height.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"entryFilter": "&9"
+				},
+				"Ligne18": {
+					"type": "line",
+					"top": 150,
+					"left": 10,
+					"width": 280,
+					"stroke": "#AAAAAA"
+				}
+			},
+			"entryOrder": [
+				"Lon_documents",
+				"input.document.width",
+				"input.document.height",
+				"input.document.viewportFill",
+				"b.document.viewportFill",
+				"stepper.document.viewportFillOpacity",
+				"input.document.viewportFillOpacity",
+				"rule.document.viewportFillOpacity",
+				"stepper.document.grid",
+				"input.document.grid",
+				"rule.document.grid"
+			]
+		}
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	},
+	"geometryStamp": 1135,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

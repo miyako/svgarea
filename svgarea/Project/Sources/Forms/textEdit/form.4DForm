@@ -1,0 +1,63 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"text": {
+					"type": "input",
+					"top": 1,
+					"left": 1,
+					"width": 230,
+					"height": 74,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.text",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/text.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onUnload"
+					]
+				}
+			},
+			"entryOrder": []
+		}
+	],
+	"editor": {
+		"activeView": "Vue 1",
+		"defaultView": "Vue 1",
+		"views": {
+			"Vue 1": {},
+			"Vue 2": {},
+			"Vue 3": {},
+			"Vue 4": {},
+			"Vue 5": {},
+			"Vue 6": {},
+			"Vue 7": {},
+			"Vue 8": {},
+			"Vue 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 12,
+	"formSizeAnchor": "text"
+}
