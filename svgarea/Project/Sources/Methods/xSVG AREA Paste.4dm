@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true}
-If (Pasteboard data size:C400("com.4d.private.svg.object")>0)
+If (tool_pasteboard_date_size>0)
 	
 	//need to reselect at the dom level before export
 	

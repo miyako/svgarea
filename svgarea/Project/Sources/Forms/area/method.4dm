@@ -13,7 +13,16 @@ Case of
 			ALERT:C41("the subform data source must NOT be set to 'object' in the form editor!")
 		Else 
 			
-			area_COMPILERs
+			Form:C1466.defaults:={\
+				rx: 20; \
+				ry: 20; \
+				fontSize: 24; \
+				fontFamily: default_font_name; \
+				fill: "rgb(255,0,0)"; \
+				stroke: "rgb(255,0,0)"; \
+				strokeWidth: 3}
+			
+			Compiler_area
 			area_INIT
 			
 			Form:C1466.objects:=cs:C1710.Objects.new()

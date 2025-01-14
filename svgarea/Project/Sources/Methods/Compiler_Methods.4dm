@@ -109,9 +109,6 @@ C_LONGINT:C283(tool_longToColor; $1)
 //area_Load_patterns
 C_OBJECT:C1216(area_Load_patterns; $0)
 
-//test_061
-C_COLLECTION:C1488(test_061; $0)
-
 //area_Choose_dasharray
 C_OBJECT:C1216(area_Choose_dasharray; $0)
 C_TEXT:C284(area_Choose_dasharray; $1)

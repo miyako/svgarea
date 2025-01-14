@@ -2,16 +2,19 @@
 C_TEXT:C284($1)
 
 C_LONGINT:C283($Lon_i)
-C_TEXT:C284($kTxt_toolColor)
 C_TEXT:C284($Txt_buffer)
 C_TEXT:C284($Txt_Dom_group)
 C_TEXT:C284($Txt_Dom_object)
 C_TEXT:C284($Txt_Dom_def)
 C_TEXT:C284($Txt_Dom_root)
 
-C_TEXT:C284($kTxt_toolColor)
+var $fontSize : Real
+$fontSize:=Form:C1466.defaults.fontSize
 
-$kTxt_toolColor:="rgb(255,0,0)"
+var $fill; $stroke; $fontFamily : Text
+$fill:=Form:C1466.defaults.fill
+$stroke:=Form:C1466.defaults.stroke
+$fontFamily:=Form:C1466.defaults.fontFamily
 
 $Txt_Dom_root:=$1
 
@@ -114,11 +117,11 @@ If (OK=0)
 		"y"; 0; \
 		"width"; 0; \
 		"height"; 0; \
-		"font-family"; Txt_fontName; \
-		"font-size"; Lon_fontSize; \
-		"fill"; $kTxt_toolColor; \
+		"font-family"; $fontFamily; \
+		"font-size"; $fontSize; \
+		"fill"; $fill; \
 		"fill-opacity"; 1; \
-		"stroke"; $kTxt_toolColor; \
+		"stroke"; $stroke; \
 		"stroke-width"; 1; \
 		"stroke-opacity"; 1; \
 		"display-align"; "auto"; \
@@ -137,7 +140,7 @@ If (OK=0)
 		"y"; 0; \
 		"width"; 0; \
 		"height"; 0; \
-		"stroke"; $kTxt_toolColor; \
+		"stroke"; $stroke; \
 		"stroke-width"; 1; \
 		"stroke-opacity"; 0.7; \
 		"stroke-dasharray"; "1,1"; \
@@ -171,7 +174,7 @@ If (OK=0)
 		"y"; 0; \
 		"width"; 0; \
 		"height"; 0; \
-		"stroke"; $kTxt_toolColor; \
+		"stroke"; $stroke; \
 		"stroke-width"; 1; \
 		"stroke-opacity"; 0.7; \
 		"stroke-dasharray"; "1,1"; \
@@ -213,8 +216,8 @@ If (OK=0)
 			"cx"; 0; \
 			"cy"; 0; \
 			"r"; 3.5; \
-			"stroke"; $kTxt_toolColor; \
-			"fill"; $kTxt_toolColor; \
+			"stroke"; $stroke; \
+			"fill"; $fill; \
 			"fill-opacity"; 1; \
 			"id"; $tTxt_handleNames{$Lon_i})
 		

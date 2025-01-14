@@ -9,6 +9,15 @@ C_TEXT:C284($Txt_toolID)
 C_LONGINT:C283($ClickX; $ClickY)
 C_LONGINT:C283($MouseX; $MouseY)
 
+var $fontSize; $strokeWidth : Real
+//$fontSize:=Form.defaults.fontSize
+$strokeWidth:=Form:C1466.defaults.strokeWidth
+
+var $fill; $stroke; $fontFamily : Text
+//$fill:=Form.defaults.fill
+$stroke:=Form:C1466.defaults.stroke
+//$fontFamily:=Form.defaults.fontFamily
+
 var $scrollX; $scrollY : Integer
 OBJECT GET SCROLL POSITION:C1114(*; "area"; $scrollY; $scrollX)
 
@@ -92,12 +101,15 @@ If (Form:C1466.MouseX>=0) && (Form:C1466.MouseY>=0)
 				
 			: ($tool="round")
 				
+				$rx:=Form:C1466.defaults.rx
+				$ry:=Form:C1466.defaults.ry
+				
 				SVG SET ATTRIBUTE:C1055(*; "area"; \
 					$Txt_toolID; \
 					"x"; $ClickX+$scrollX; \
 					"y"; $ClickY+$scrollY; \
-					"rx"; Lon_round; \
-					"ry"; Lon_round)
+					"rx"; $rx; \
+					"ry"; $ry)
 				$Boo_fill:=True:C214
 				$Boo_stroke:=True:C214
 				$Boo_dasharray:=True:C214
@@ -120,7 +132,7 @@ If (Form:C1466.MouseX>=0) && (Form:C1466.MouseY>=0)
 					"x"; $ClickX+$scrollX; \
 					"y"; $ClickY+$scrollY; \
 					"4D-text"; "Sample text"; \
-					"fill"; <>Txt_strokeColor; \
+					"fill"; $stroke; \
 					"fill-opacity"; 1)
 				
 				//Rect {
@@ -167,8 +179,8 @@ If (Form:C1466.MouseX>=0) && (Form:C1466.MouseY>=0)
 			
 			SVG SET ATTRIBUTE:C1055(*; "area"; \
 				$Txt_toolID; \
-				"stroke"; <>Txt_strokeColor; \
-				"stroke-width"; <>Lon_strokeWidth)
+				"stroke"; $stroke; \
+				"stroke-width"; $strokeWidth)
 			
 		End if 
 		
@@ -176,7 +188,7 @@ If (Form:C1466.MouseX>=0) && (Form:C1466.MouseY>=0)
 			
 			SVG SET ATTRIBUTE:C1055(*; "area"; \
 				$Txt_toolID; \
-				"fill"; <>Txt_fillColor; \
+				"fill"; "rgb(255,255,255)"; \
 				"fill-opacity"; 1)
 			
 		End if 

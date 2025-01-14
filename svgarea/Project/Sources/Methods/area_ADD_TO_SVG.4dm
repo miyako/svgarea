@@ -7,6 +7,19 @@ C_REAL:C285($Num_cx; $Num_cy; $Num_rx; $Num_ry)
 C_TEXT:C284($Txt_Dom_object; $Txt_Dom_template; $Txt_toolID)
 C_TEXT:C284($Txt_UID)
 
+var $rx; $ry : Real
+$rx:=Form:C1466.defaults.rx
+$ry:=Form:C1466.defaults.ry
+
+var $fontSize; $strokeWidth : Real
+$fontSize:=Form:C1466.defaults.fontSize
+$strokeWidth:=Form:C1466.defaults.strokeWidth
+
+var $fill; $stroke; $fontFamily : Text
+$fill:=Form:C1466.defaults.fill
+$stroke:=Form:C1466.defaults.stroke
+$fontFamily:=Form:C1466.defaults.fontFamily
+
 var $scrollX; $scrollY : Integer
 OBJECT GET SCROLL POSITION:C1114(*; "area"; $scrollY; $scrollX)
 
@@ -108,14 +121,14 @@ Case of
 			"y"; $y+$scrollY; \
 			"width"; $Lon_width; \
 			"height"; $Lon_height; \
-			"rx"; Lon_round; \
-			"ry"; Lon_round; \
+			"rx"; $rx; \
+			"ry"; $ry; \
 			"editor:x"; $x+$scrollX; \
 			"editor:y"; $y+$scrollY; \
 			"editor:width"; $Lon_width; \
 			"editor:height"; $Lon_height; \
-			"editor:rx"; Lon_round; \
-			"editor:ry"; Lon_round; \
+			"editor:rx"; $rx; \
+			"editor:ry"; $ry; \
 			"editor:type"; "rect")
 		
 		$Boo_fillable:=True:C214
@@ -170,14 +183,14 @@ Case of
 			"y"; $y+$scrollY; \
 			"width"; $Lon_width; \
 			"height"; $Lon_height; \
-			"font-family"; Txt_fontName; \
-			"font-size"; Lon_fontSize; \
+			"font-family"; $fontFamily; \
+			"font-size"; $fontSize; \
 			"editor:x"; $x+$scrollX; \
 			"editor:y"; $y+$scrollY; \
 			"editor:width"; $Lon_width; \
 			"editor:height"; $Lon_height; \
-			"editor:font-family"; Txt_fontName; \
-			"editor:font-size"; Lon_fontSize; \
+			"editor:font-family"; $fontFamily; \
+			"editor:font-size"; $fontSize; \
 			"editor:type"; "text")
 		
 		DOM SET XML ELEMENT VALUE:C868($Txt_Dom_object; "Sample text")
@@ -227,21 +240,21 @@ Case of
 End case 
 
 If ($Boo_stroke)
-	DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "stroke"; <>Txt_strokeColor; "stroke-width"; <>Lon_strokeWidth; \
-		"editor:stroke"; <>Txt_strokeColor; "editor:stroke-width"; <>Lon_strokeWidth)
+	DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "stroke"; $stroke; "stroke-width"; $strokeWidth; \
+		"editor:stroke"; $stroke; "editor:stroke-width"; $strokeWidth)
 End if 
 
 If ($Boo_fillable)
 	
 	If ($tool="text")  //but text is not fillable
 		
-		DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "fill"; <>Txt_strokeColor; "fill-opacity"; 1; \
-			"editor:fill"; <>Txt_strokeColor; "editor:fill-opacity"; 1)
+		DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "fill"; $stroke; "fill-opacity"; 1; \
+			"editor:fill"; $stroke; "editor:fill-opacity"; 1)
 		
 	Else 
 		
-		DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "fill"; <>Txt_fillColor; "fill-opacity"; 1; \
-			"editor:fill"; <>Txt_fillColor; "editor:fill-opacity"; 1)
+		DOM SET XML ATTRIBUTE:C866($Txt_Dom_object; "fill"; "rgb(255,255,255)"; "fill-opacity"; 1; \
+			"editor:fill"; "rgb(255,255,255)"; "editor:fill-opacity"; 1)
 		
 	End if 
 	

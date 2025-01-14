@@ -186,23 +186,6 @@
 						"onClick"
 					]
 				},
-				"Tool_8": {
-					"type": "radio",
-					"top": 303,
-					"left": 970,
-					"width": 32,
-					"height": 32,
-					"sizingX": "move",
-					"dataSource": "Form:C1466.Tool_8",
-					"fontTheme": "normal",
-					"focusable": false,
-					"icon": "/RESOURCES/images/tools/path.png",
-					"iconFrames": 1,
-					"style": "bevel",
-					"events": [
-						"onClick"
-					]
-				},
 				"b.grid": {
 					"type": "checkbox",
 					"top": 12,
@@ -1152,5 +1135,5 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 565
+	"geometryStamp": 566
 }

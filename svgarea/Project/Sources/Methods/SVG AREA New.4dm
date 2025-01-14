@@ -1,5 +1,5 @@
 //%attributes = {"invisible":true,"shared":true}
-area_COMPILERs
+Compiler_area
 
 var $dom : Text
 
