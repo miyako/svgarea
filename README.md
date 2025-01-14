@@ -1,3 +1,8 @@
+![version](https://img.shields.io/badge/version-20%2B-E23089)
+![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue)
+[![license](https://img.shields.io/github/license/miyako/svgarea)](LICENSE)
+![downloads](https://img.shields.io/github/downloads/miyako/svgarea/total)
+
 # svgarea
 replica of [4D v12 SVG Area widget component](https://github.com/vdelachaux/SVG)
 
