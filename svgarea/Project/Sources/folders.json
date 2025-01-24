@@ -28,6 +28,7 @@
 	},
 	"v20": {
 		"methods": [
+			"area_ADAPT_TO_FRAME",
 			"area_ADD_TO_SVG",
 			"area_ALIGN_OBJECTS",
 			"area_Choose_dasharray",
