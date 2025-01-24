@@ -221,7 +221,7 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "integer",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"MouseY": {
 					"type": "input",
@@ -242,7 +242,7 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "integer",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"b.arrowRight": {
 					"type": "button",
@@ -502,8 +502,8 @@
 				},
 				"isTimerRunning": {
 					"type": "input",
-					"top": 602,
-					"left": 126,
+					"top": 582,
+					"left": 186,
 					"width": 36,
 					"height": 11,
 					"sizingY": "move",
@@ -520,12 +520,12 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "boolean",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"isResizing": {
 					"type": "input",
-					"top": 602,
-					"left": 166,
+					"top": 582,
+					"left": 226,
 					"width": 36,
 					"height": 11,
 					"sizingY": "move",
@@ -542,12 +542,12 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "boolean",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"isDrawing": {
 					"type": "input",
-					"top": 602,
-					"left": 206,
+					"top": 582,
+					"left": 266,
 					"width": 36,
 					"height": 11,
 					"sizingY": "move",
@@ -564,12 +564,12 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "boolean",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"isSelecting": {
 					"type": "input",
-					"top": 602,
-					"left": 246,
+					"top": 582,
+					"left": 306,
 					"width": 36,
 					"height": 11,
 					"sizingY": "move",
@@ -586,12 +586,12 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "boolean",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"ClickX": {
 					"type": "input",
-					"top": 602,
-					"left": 288,
+					"top": 582,
+					"left": 348,
 					"width": 42,
 					"height": 11,
 					"sizingY": "move",
@@ -607,12 +607,12 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "integer",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"ClickY": {
 					"type": "input",
-					"top": 602,
-					"left": 346,
+					"top": 582,
+					"left": 406,
 					"width": 56,
 					"height": 11,
 					"sizingY": "move",
@@ -628,7 +628,7 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "integer",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"b.arrowUpCommandShift": {
 					"type": "button",
@@ -893,7 +893,7 @@
 				"hoveredObjectId": {
 					"type": "input",
 					"top": 582,
-					"left": 126,
+					"left": 146,
 					"width": 36,
 					"height": 11,
 					"sizingY": "move",
@@ -910,7 +910,7 @@
 					"dropping": "custom",
 					"events": [],
 					"dataSourceTypeHint": "text",
-					"visibility": "visible"
+					"visibility": "hidden"
 				},
 				"b.enter": {
 					"type": "button",
@@ -1088,11 +1088,12 @@
 				"Tool_7"
 			]
 		},
-		"activeView": "main",
+		"activeView": "info",
 		"defaultView": "main",
 		"views": {
 			"main": {},
 			"tool": {
+				"visible": false,
 				"objects": [
 					"b.arrowRight",
 					"b.arrowRightShift",
@@ -1102,6 +1103,9 @@
 					"b.arrowUpShift",
 					"b.arrowDown",
 					"b.arrowDownShift",
+					"b.viewer",
+					"b.save",
+					"b.all",
 					"b.arrowUpCommandShift",
 					"b.arrowUpCommand",
 					"b.arrowDownCommandShift",
@@ -1112,8 +1116,15 @@
 					"b.arrowRightCommand",
 					"b.backspace",
 					"b.supr",
+					"b.open",
+					"b.palette",
+					"b.new",
 					"b.enter",
-					"b.return"
+					"b.return",
+					"b.copy",
+					"b.paste",
+					"b.cut",
+					"b.duplicate"
 				]
 			},
 			"SVG Area": {
@@ -1123,17 +1134,39 @@
 					"Picture15"
 				]
 			},
-			"Vue 4": {},
-			"Vue 5": {},
-			"Vue 6": {},
-			"Vue 7": {},
-			"Vue 8": {},
-			"Vue 9": {}
+			"info": {
+				"objects": [
+					"MouseX",
+					"MouseY",
+					"isTimerRunning",
+					"isResizing",
+					"isDrawing",
+					"isSelecting",
+					"ClickX",
+					"ClickY",
+					"hoveredObjectId"
+				]
+			},
+			"Vue 5": {
+				"visible": false
+			},
+			"Vue 6": {
+				"visible": false
+			},
+			"Vue 7": {
+				"visible": false
+			},
+			"Vue 8": {
+				"visible": false
+			},
+			"Vue 9": {
+				"visible": false
+			}
 		}
 	},
 	"$4d": {
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 566
+	"geometryStamp": 579
 }

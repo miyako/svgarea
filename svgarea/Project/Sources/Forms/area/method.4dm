@@ -13,6 +13,8 @@ Case of
 			ALERT:C41("the subform data source must NOT be set to 'object' in the form editor!")
 		Else 
 			
+			area_ADAPT_TO_FRAME
+			
 			Form:C1466.defaults:={\
 				rx: 20; \
 				ry: 20; \
