@@ -7,10 +7,11 @@ OBJECT GET COORDINATES:C663(*; "area"; $left; $top; $right; $bottom)
 
 var $formWidth; $formHeight : Integer
 FORM GET PROPERTIES:C674(Current form name:C1298; $formWidth; $formHeight)
+var $rightMargin; $bottomMargin : Integer
 $rightMargin:=$formWidth-$right
 $bottomMargin:=$formHeight-$bottom
 
-var $moveH : Integer
+var $moveH; $moveV : Integer
 $moveH:=$width-$formWidth
 $moveV:=$height-$formHeight
 
