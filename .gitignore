@@ -1,3 +1,5 @@
 
 svgarea/Settings/backup.4DSettings
 svgarea/Settings/directory.json
+svgarea/Settings/buildApp.4DSettings
+svgarea_Build/*
