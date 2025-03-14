@@ -7,7 +7,7 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/miyako/svgarea",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "tool": {
     "platform": "macos",
     "branch": "20.x",
