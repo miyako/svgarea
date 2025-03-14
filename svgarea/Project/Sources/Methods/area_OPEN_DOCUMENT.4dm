@@ -6,7 +6,8 @@ $fileName:=Select document:C905(""; ".svg"; Get localized string:C991("SelectAnS
 
 If (OK=1)
 	
-	$dom:=SVG_Open_file(DOCUMENT)
+	EXECUTE METHOD:C1007("SVG_Open_file"; $dom; DOCUMENT)
+	//$dom:=SVG_Open_file(DOCUMENT)
 	
 	If ($dom#"")
 		

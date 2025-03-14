@@ -132,7 +132,8 @@ Case of
 		
 		var $dom : Text
 		$dom:=Form:C1466.area.export()
-		SVGTool_SHOW_IN_VIEWER($dom)
+		EXECUTE METHOD:C1007("SVGTool_SHOW_IN_VIEWER"; $dom)
+		//SVGTool_SHOW_IN_VIEWER($dom)
 		WRAP_DOM_CLOSE_XML($dom)
 		
 	: ($Mnu_choice="property_list")
