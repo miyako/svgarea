@@ -1,7 +1,7 @@
 //%attributes = {"invisible":true}
 #DECLARE($dom : Text)
 
-var $shadowDom; $grid; $dom; $dashArray; $line : Text
+var $shadowDom; $grid; $dashArray; $line : Text
 
 $dashArray:="1,"+String:C10(Form:C1466.area.grid-1)
 

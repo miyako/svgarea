@@ -5,7 +5,7 @@ var $dom : Text
 $dom:=Form:C1466.area.DOM
 
 C_TEXT:C284($Txt_Dom_Current; $Txt_Dom_group; $Txt_Dom_object; $Txt_Dom_template; $Txt_currentsHandles)
-C_TEXT:C284($Txt_handleID; $Txt_ID)
+C_TEXT:C284($Txt_handleID)
 
 var $objectDom; $objectType : Text
 $objectDom:=DOM Find XML element by ID:C1010($dom; $Txt_ID)

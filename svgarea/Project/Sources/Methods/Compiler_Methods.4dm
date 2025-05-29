@@ -27,8 +27,6 @@ C_TEXT:C284(area_SET_LEVEL; $1)
 C_TEXT:C284(mnu_loadAlignMenu; $0)
 C_TEXT:C284(mnu_loadAlignMenu; $1)
 C_PICTURE:C286(SVG AREA SET PICTURE; $1)
-C_TEXT:C284(SVG_OPEN_subForm; $1)
-
 
 C_TEXT:C284(SVG AREA Get Callback Method; $0)
 C_TEXT:C284(area_SET_CURSOR; $1)

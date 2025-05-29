@@ -2,7 +2,7 @@
 #DECLARE($dashArray : Text; $dashArrays : Collection) : Object
 
 var $item : Object
-var $menu; $dashArray : Text
+var $menu : Text
 
 $menu:=Create menu:C408
 For each ($item; $dashArrays)
